@@ -1,0 +1,54 @@
+.text {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+}
+.GroupPhoto {
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+    width: 1000px;
+    margin: 0 auto;
+}
+.button1 a {
+  padding: 1em 2em;
+  background-color: red;
+  border: none;
+  color: white;
+  border-radius: 1000px;
+  font-family: cursive;
+  display:inline-block;
+  position: relative;
+  text-decoration: none;
+}
+.button2 a { /* the a is an anchor */
+  padding: 1em 2em;
+  background-color: yellow;
+  border: none;
+  color: black;
+  border-radius: 1000px;
+  font-family: cursive;
+  text-decoration: none;
+  
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.button2 a::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 1000px;
+  background-image: linear-gradient(to bottom right, #ff009d, #ffff00);
+  z-index: -1;
+  opacity: 0.5;
+}
